@@ -30,9 +30,8 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.save(customer);
     }
 
-    // WERKT NIET
     @Override
-    public Customer deleteCustomerById(Long id) {
-        return customerRepository.findById(id).get();
+    public void deleteCustomer(Long id){
+        customerRepository.deleteById(id);
     }
 }

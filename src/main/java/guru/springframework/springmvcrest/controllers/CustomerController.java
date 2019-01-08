@@ -29,11 +29,10 @@ public class CustomerController {
         return customerService.findCustomerById(id);
     }
 
-    //WERK NIET
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Customer deleteCustomerById(@PathVariable Long id) {
-        return null;
+    public void deleteCustomerById(@PathVariable Long id) {
+        customerService.deleteCustomer(id);
     }
 
     @PostMapping
