@@ -12,6 +12,6 @@ public interface CustomerService { // Alt + Enter, implement interface
 
     Customer saveCustomer(Customer customer);
 
-    public void deleteCustomer(Long id);
+    void deleteCustomer(Long id);
 
 }
